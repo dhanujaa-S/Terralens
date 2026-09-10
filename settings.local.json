@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/c/Users/sreeh/OneDrive/Desktop/TerraLens_SIH/terra_lens/ui\")",
+      "Bash(python -c ' *)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
+      "Bash(python -m py_compile ui/upload_ui.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python -m modules.ocr_pipeline \"data/sample_land_record.png\")",
+      "Bash(python -m py_compile app.py ui/review_ui.py)",
+      "Bash(python -c \"import ui.review_ui; print\\('IMPORT OK'\\)\")",
+      "Bash(python -m py_compile app.py ui/records_ui.py)",
+      "Bash(python -c \"import ui.records_ui; print\\('IMPORT OK'\\)\")",
+      "Bash(python -m py_compile app.py ui/map_ui.py ui/analytics_ui.py)",
+      "Bash(python -c \"import ui.map_ui; import ui.analytics_ui; print\\('IMPORT OK'\\)\")",
+      "Bash(python -m py_compile modules/gis_module.py)",
+      "Bash(python -m py_compile app.py ui/export_ui.py ui/admin_ui.py)",
+      "Bash(python -c \"import ui.export_ui; import ui.admin_ui; print\\('IMPORT OK'\\)\")",
+      "Bash(python -m py_compile ui/styles.py)",
+      "Bash(python -m py_compile ui/components.py)",
+      "Bash(python -m py_compile ui/login_ui.py)",
+      "Bash(python -m py_compile ui/dashboard_ui.py)",
+      "Bash(python -m py_compile ui/review_ui.py)",
+      "Bash(python -c \"import streamlit; print\\('installed streamlit version:', streamlit.__version__\\)\")",
+      "Bash(python -m py_compile ui/records_ui.py)",
+      "Bash(python -m py_compile ui/map_ui.py)",
+      "Bash(python -m py_compile ui/analytics_ui.py)",
+      "Bash(python -m py_compile ui/export_ui.py)",
+      "Bash(python -m py_compile ui/admin_ui.py)",
+      "Bash(python -m py_compile ui/dashboard_ui.py ui/records_ui.py ui/review_ui.py)",
+      "Bash(python -m py_compile app.py)",
+      "Bash(echo \"exit code: $?\")"
+    ]
+  }
+}
